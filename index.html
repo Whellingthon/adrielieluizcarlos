@@ -116,20 +116,25 @@
         </div>
 
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-[var(--primary)] text-center flex flex-col justify-between">
-            <div class="mb-4">
-                <i data-feather="gift" class="w-10 h-10 text-[var(--secondary)] mx-auto mb-4"></i>
-                <h3 class="text-xl font-bold mb-4">Presentes via PIX</h3>
-                <p class="text-gray-600 text-sm mb-4">Se preferir, sua contribuição pode ser feita via PIX:</p>
-                <p class="text-gray-600 text-sm mb-4">Chave CNPJ:<br>
-                    <span class="font-semibold text-gray-800 text-xs md:text-sm">45.207.745/0001-64</span>
-                </p>
-            </div>
-            <div class="mb-6 flex flex-col items-center">
-                <img src="img/qrcode-pix.png" alt="QR Code PIX para Presentes" class="w-32 h-32 md:w-36 md:h-36 mx-auto mb-2 border p-1 rounded-lg">
-                <p class="text-xs text-gray-500 italic">Abra o app do seu banco e escaneie.</p>
-            </div>
-            <a href="pix://pay?cn=45.207.745%2F0001-64" target="_blank" rel="noopener noreferrer" class="block bg-[#32b8ac] text-white py-3 rounded-lg font-semibold hover:bg-[#2a9a8f] transition text-sm">Copia e Cola o PIX</a>
-        </div>
+    <div class="mb-4">
+        <i data-feather="gift" class="w-10 h-10 text-[var(--secondary)] mx-auto mb-4"></i>
+        <h3 class="text-xl font-bold mb-4">Presentes via PIX</h3>
+        <p class="text-gray-600 text-sm mb-4">Sua presença é nosso maior presente, mas se desejar nos abençoar com uma contribuição:</p>
+        
+       <div class="mb-6 flex flex-col items-center">
+    <!-- Gerando o QR Code dinamicamente com a API QRServer -->
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020101021126580014BR.GOV.BCB.PIX0118452077450001645204000053039865802BR5921ADRIELI%20FONTANA%20ARAUJO6007MARILIA62070503***6304" 
+         alt="QR Code PIX para Presentes" 
+         class="w-32 h-32 md:w-36 md:h-36 mx-auto mb-2 border p-1 rounded-lg bg-white">
+    <p class="text-[10px] text-gray-500 italic">Abra o app do seu banco e escaneie.</p>
+</div>
+<div>OU</div>
+    </div>
+
+    <button id="btnCopiaPix" class="block w-full bg-[#32b8ac] text-white py-3 rounded-lg font-semibold hover:bg-[#2a9a8f] transition text-sm shadow-md">
+        <i data-feather="copy" class="w-4 h-4 inline mr-2"></i> Copiar Código PIX
+    </button>
+</div>
 
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-[var(--primary)] text-center flex flex-col justify-between">
             <div>
@@ -143,7 +148,7 @@
                         V. Maria Fernandes Cavalari, 915-1009<br>
                         Marília - SP
                     </p>
-                    <a href="https://maps.app.goo.gl/uXy2C4mN59kK1R1k8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-[var(--accent)] hover:text-blue-800 transition">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Igreja+Nossa+Senhora+Auxiliadora+Marilia+SP" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-[var(--accent)] hover:text-blue-800 transition">
                         <i data-feather="map" class="w-4 h-4 mr-1"></i>
                         Ver rota no Maps
                     </a>
@@ -158,7 +163,7 @@
                         Rua Priscila de Oliveira Bertoletti, 180<br>
                         Lácio, Marília - SP
                     </p>
-                    <a href="https://maps.app.goo.gl/Fk9pY7vYnL2o5jV4A" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-[var(--accent)] hover:text-blue-800 transition">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Chácara+Gouveia+Rua+Priscila+de+Oliveira+Bertoletti+180+Lácio+Marília" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-[var(--accent)] hover:text-blue-800 transition">
                         <i data-feather="map" class="w-4 h-4 mr-1"></i>
                         Ver rota no Maps
                     </a>
@@ -227,7 +232,7 @@
 
     <!-- Áudio -->
     <audio id="siteMusic" preload="auto" playsinline loop>
-        <source src="music/Kiss%20-%20Forever%20%28Official%20Video%29.mp3" type="audio/mpeg">
+        <source src="music/forever.mp3" type="audio/mpeg">
     </audio>
 
     <script src="js/noivas.js"></script>

@@ -221,3 +221,28 @@ if (siteMusic && playerInfo) {
         playerInfo.classList.add('opacity-100', 'visible', 'translate-y-0');
     };
 }
+// No topo do seu arquivo JS (Substitua a variável existente)
+const pixCopiaECola = "00020101021126580014BR.GOV.BCB.PIX0118452077450001645204000053039865802BR5921ADRIELI FONTANA ARAUJO6007MARILIA62070503***6304";
+
+// Dentro do seu DOMContentLoaded ou no final do arquivo
+const btnCopiaPix = document.getElementById('btnCopiaPix');
+
+if (btnCopiaPix) {
+    btnCopiaPix.addEventListener('click', () => {
+        navigator.clipboard.writeText(pixCopiaECola).then(() => {
+            // Feedback visual para o convidado
+            const originalText = btnCopiaPix.innerHTML;
+            btnCopiaPix.innerHTML = '<i data-feather="check" class="w-4 h-4 inline mr-2"></i> Código Copiado!';
+            btnCopiaPix.classList.replace('bg-[#32b8ac]', 'bg-green-600');
+            feather.replace();
+
+            setTimeout(() => {
+                btnCopiaPix.innerHTML = originalText;
+                btnCopiaPix.classList.replace('bg-green-600', 'bg-[#32b8ac]');
+                feather.replace();
+            }, 3000);
+        }).catch(err => {
+            alert("Erro ao copiar. Por favor, utilize a chave CNPJ manualmente.");
+        });
+    });
+}
