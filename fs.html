@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lívia & Taylor - Nosso Casamento</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/noivas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body class="relative">
+    <div id="vanta-bg" class="fixed inset-0 -z-10 opacity-30"></div>
+    
+    <header class="text-white py-20 px-4 text-center relative overflow-hidden h-[600px] flex items-center justify-center">
+        <div id="hero-carousel" class="absolute inset-0 z-0">
+            <div class="carousel-bg-item active absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center" style="background-image: url('img/IMG-20250802-WA0042.jpg');"></div>
+            <div class="carousel-bg-item absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center" style="background-image: url('img/IMG-20250802-WA0043.jpg');"></div>
+            <div class="carousel-bg-item absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center" style="background-image: url('img/IMG-20250802-WA0044.jpg');"></div>
+            <div class="carousel-bg-item absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center" style="background-image: url('img/IMG-20250802-WA0045.jpg');"></div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[var(--primary)] via-[var(--primary)]/70 to-transparent z-10"></div>
+        <div class="max-w-4xl mx-auto relative z-20">
+            <h1 class="text-6xl md:text-8xl font-wedding mb-4">Lívia & Taylor</h1>
+    <p class="text-xl md:text-2xl mb-8">
+    Vamos nos <span class="casar-bold">casar</span>!
+</p>
+
+            <div id="countdown-container" class="flex justify-center gap-4 md:gap-8 mb-12">
+                <div class="text-center bg-white/20 p-4 rounded-lg w-20 md:w-24"><div class="text-3xl md:text-4xl font-bold countdown-number" id="days">00</div><div class="text-xs uppercase countdown-label">Dias</div></div>
+                <div class="text-center bg-white/20 p-4 rounded-lg w-20 md:w-24"><div class="text-3xl md:text-4xl font-bold countdown-number" id="hours">00</div><div class="text-xs uppercase countdown-label">Horas</div></div>
+                <div class="text-center bg-white/20 p-4 rounded-lg w-20 md:w-24"><div class="text-3xl md:text-4xl font-bold countdown-number" id="minutes">00</div><div class="text-xs uppercase countdown-label">Minutos</div></div>
+                <div class="text-center bg-white/20 p-4 rounded-lg w-20 md:w-24"><div class="text-3xl md:text-4xl font-bold countdown-number" id="seconds">00</div><div class="text-xs uppercase countdown-label">Segundos</div></div>
+            </div>
+            <a href="#rsvp" class="inline-block bg-white text-[var(--secondary)] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">Confirmar Presença</a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <section id="historia" class="mb-24">
+            <div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-bold">Nossa História</h2><div class="w-24 h-1 bg-[var(--accent)] mx-auto mt-4"></div></div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--secondary)]">Como Tudo Começou</h3>
+                    <p class="mb-4 text-gray-600 leading-relaxed">Toda história de amor tem um começo… a nossa, curiosamente, começa com uma dúvida que até hoje nos faz sorrir: quem deu o primeiro passo?</p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">Entre versões diferentes e risadas, a verdade é que, desde o início, algo já nos aproximava de um jeito especial. Não foi preciso muito tempo… um olhar aqui, um sorriso ali, até que veio o primeiro beijo — e, como se o tempo tivesse certeza do que estava fazendo, no dia seguinte já estávamos de mãos dadas, como quem nunca mais queria soltar.</p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">No dia 18 de julho de 2023, depois de um simples açaí — que virou tradição — começamos oficialmente a nossa história. E, desde então, passamos a escrever juntos cada capítulo, escolhendo um ao outro todos os dias.</p>
+                </div>
+                <div><img src="img/IMG-20250802-WA0042.jpg" alt="Foto do casal em um café" class="rounded-lg shadow-xl w-full"></div>
+            </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                    <div><img src="img/IMG-20250802-WA0043.jpg" alt="Foto do casal em um parque" class="rounded-lg shadow-xl w-full"></div>
+             <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--secondary)]">E depois disso...</h3>
+                    <p class="mb-4 text-gray-600 leading-relaxed">Vivemos momentos leves, intensos, desafiadores e inesquecíveis. Crescemos lado a lado, aprendendo que amar é, acima de tudo, permanecer. Até que, em meio ao frio e ao encanto de Campos do Jordão, veio um dos capítulos mais marcantes: o pedido de casamento, tão sonhado, tão esperado… tão nosso. Ali começava o nosso noivado, em 10 de agosto de 2024.</p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">O “sim” continuou ecoando em nossas vidas, e no dia 26 de março de 2025, oficializamos nossa união no civil. Mas nossos sonhos iam além… sempre falamos sobre família, sobre amor que se multiplica.</p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">E Deus, em sua infinita bondade, nos presenteou com o maior dos milagres: a chegada do nosso filho, Arthur. Com ele, nossa história ganhou um novo sentido… e nossa família, enfim, se tornou completa.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="fotos" class="mb-24">
+            <div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-bold">Nossos Momentos</h2><div class="w-24 h-1 bg-[var(--accent)] mx-auto mt-4"></div></div>
+            <div class="relative">
+                <div class="carousel-container overflow-hidden relative rounded-lg shadow-xl">
+                    <div class="main-carousel-slide flex transition-transform duration-500 ease-in-out">
+                        <div class="carousel-item w-full flex-shrink-0" style="background-image: url('img/IMG-20250802-WA0042.jpg')"></div>
+                        <div class="carousel-item w-full flex-shrink-0" style="background-image: url('img/IMG-20250802-WA0043.jpg')"></div>
+                        <div class="carousel-item w-full flex-shrink-0" style="background-image: url('img/IMG-20250802-WA0044.jpg')"></div>
+                    </div>
+                </div>
+                <button aria-label="Slide Anterior" class="main-carousel-btn prev absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition"><i data-feather="chevron-left" class="text-[var(--dark)]"></i></button>
+                <button aria-label="Próximo Slide" class="main-carousel-btn next absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition"><i data-feather="chevron-right" class="text-[var(--dark)]"></i></button>
+            </div>
+        </section>
+
+        <section id="evento" class="mb-24">
+            <div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-bold">O Grande Dia</h2><div class="w-24 h-1 bg-[var(--accent)] mx-auto mt-4"></div></div>
+            <div class="bg-white p-8 rounded-lg shadow-xl max-w-4xl mx-auto text-center">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="flex flex-col items-center border-b md:border-b-0 md:border-r pb-6 md:pb-0 md:pr-6 border-gray-200"><i data-feather="calendar" class="w-12 h-12 text-[var(--accent)] mb-4"></i><h3 class="text-xl font-semibold mb-1">Data</h3><p class="text-lg text-gray-700">19 De Dezembro de 2026</p></div>
+                    <div class="flex flex-col items-center border-b md:border-b-0 md:border-r pb-6 md:pb-0 md:pr-6 border-gray-200"><i data-feather="clock" class="w-12 h-12 text-[var(--accent)] mb-4"></i><h3 class="text-xl font-semibold mb-1">Horário</h3><p class="text-lg text-gray-700">às 10:00</p></div>
+                    <div class="flex flex-col items-center"><i data-feather="map-pin" class="w-12 h-12 text-[var(--accent)] mb-4"></i><h3 class="text-xl font-semibold mb-1">Local</h3><p class="text-lg text-gray-700">Paróquia São Miguel Arcanjo </p><p class="text-md text-gray-500 mb-4">Av. Castro Alves 867 <br> Marília - SP</p><a href="https://maps.app.goo.gl/dJQH9QPqPNoG61S17" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[var(--secondary)] text-white px-6 py-2 rounded-full font-semibold hover:bg-[var(--dark)] transition duration-300"><i data-feather="navigation" class="w-4 h-4 mr-2"></i>Ver no mapa e traçar rota</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="presentes" class="mb-24">
+            <div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-bold">Lista de Presentes</h2><div class="w-24 h-1 bg-[var(--accent)] mx-auto mt-4"></div><p class="max-w-2xl mx-auto mt-4 text-lg text-gray-600">Sua presença é nosso maior presente! Mas se desejar nos presentear, criamos uma lista com itens simbólicos para nos ajudar a realizar nossa lua de mel.</p></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gift-card bg-white rounded-lg overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"><img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jantar Romântico" class="w-full h-48 object-cover"><div class="p-6 text-center"><h3 class="text-xl font-semibold mb-2">Jantar Romântico</h3><p class="text-gray-600 mb-4 h-16">Um brinde ao nosso amor em um restaurante especial.</p><span class="font-bold text-2xl text-[var(--secondary)] block mb-4">R$ 250</span><button class="gift-btn bg-[var(--accent)] text-white w-full py-2 rounded-lg font-semibold hover:bg-[var(--secondary)] transition">Presentear <i data-feather="gift" class="inline w-4 h-4 ml-1"></i></button></div></div>
+                <div class="gift-card bg-white rounded-lg overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"><img src="https://lirp.cdn-website.com/f5a9d686/dms3rep/multi/opt/dji_fly_20230318_125308_274_1679176406474_photo-2b1896a8-1920w.jpg" alt="Passeio de Barco" class="w-full h-48 object-cover"><div class="p-6 text-center"><h3 class="text-xl font-semibold mb-2">Passeio de Barco</h3><p class="text-gray-600 mb-4 h-16">Para explorarmos as mais belas praias e ilhas.</p><span class="font-bold text-2xl text-[var(--secondary)] block mb-4">R$ 400</span><button class="gift-btn bg-[var(--accent)] text-white w-full py-2 rounded-lg font-semibold hover:bg-[var(--secondary)] transition">Presentear <i data-feather="gift" class="inline w-4 h-4 ml-1"></i></button></div></div>
+                <div class="gift-card bg-white rounded-lg overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"><img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Diária de Hotel" class="w-full h-48 object-cover"><div class="p-6 text-center"><h3 class="text-xl font-semibold mb-2">Diária de Hotel</h3><p class="text-gray-600 mb-4 h-16">Uma noite de conforto e descanso em nossa viagem.</p><span class="font-bold text-2xl text-[var(--secondary)] block mb-4">R$ 500</span><button class="gift-btn bg-[var(--accent)] text-white w-full py-2 rounded-lg font-semibold hover:bg-[var(--secondary)] transition">Presentear <i data-feather="gift" class="inline w-4 h-4 ml-1"></i></button></div></div>
+                <div class="gift-card bg-white rounded-lg overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"><img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Café da Manhã" class="w-full h-48 object-cover"><div class="p-6 text-center"><h3 class="text-xl font-semibold mb-2">Café da Manhã</h3><p class="text-gray-600 mb-4 h-16">Para começarmos um dos nossos dias da melhor forma!</p><span class="font-bold text-2xl text-[var(--secondary)] block mb-4">R$ 100</span><button class="gift-btn bg-[var(--accent)] text-white w-full py-2 rounded-lg font-semibold hover:bg-[var(--secondary)] transition">Presentear <i data-feather="gift" class="inline w-4 h-4 ml-1"></i></button></div></div>
+            </div>
+            <div class="mt-16 text-center"><div class="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-xl"><i data-feather="heart" class="w-12 h-12 mx-auto text-[var(--accent)] mb-4"></i><h3 class="text-2xl md:text-3xl font-bold mb-4">Prefere outro valor?</h3><p class="text-gray-600 mb-6">Sinta-se à vontade para nos presentear com a quantia que seu coração desejar. Toda forma de carinho é bem-vinda!</p><button class="gift-btn bg-[var(--secondary)] text-white px-8 py-3 rounded-full font-semibold hover:bg-[var(--dark)] transition duration-300 transform hover:scale-105">Presentear com qualquer valor</button></div></div>
+        </section>
+        <!-- Seção: Informações Úteis (Hospedagem e Dress Code) -->
+<section id="informacoes" class="mb-24">
+    <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold">Informações Úteis</h2>
+        <div class="w-24 h-1 bg-[var(--accent)] mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        
+        <!-- Bloco: Onde Ficar (Hospedagem) -->
+        <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-[var(--primary)]">
+            <div class="flex items-center justify-center mb-6">
+                <i data-feather="home" class="w-10 h-10 text-[var(--secondary)] mr-3"></i>
+                <h3 class="text-2xl font-bold text-[var(--dark)]">Hospedagem</h3>
+            </div>
+            <p class="text-gray-600 mb-6 text-center leading-relaxed">
+                Para o conforto dos convidados que vêm de fora, selecionamos opções de hotéis em Marília. Sugerimos a reserva para o período de <strong>18 a 20 de Dezembro</strong>.
+            </p>
+            <div class="space-y-4">
+                <!-- Link Dinâmico do Booking para Marília -->
+                <a href="https://www.booking.com/searchresults.pt-br.html?ss=Mar%C3%ADlia&checkin=2026-12-18&checkout=2026-12-20" 
+                   target="_blank" rel="noopener"
+                   class="flex items-center justify-center bg-[#003580] text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-900 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Booking.com_logo.svg" alt="Booking.com" class="h-5 mr-3 filter brightness-0 invert">
+                    Ver hotéis no Booking
+                </a>
+                <p class="text-xs text-gray-400 text-center italic">* Reservas recomendadas com antecedência.</p>
+            </div>
+        </div>
+
+       
+        <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-[var(--primary)] text-center">
+            <div class="flex items-center justify-center mb-6">
+                <i data-feather="scissors" class="w-10 h-10 text-[var(--secondary)] mr-3"></i>
+                <h3 class="text-2xl font-bold text-[var(--dark)]">Traje</h3>
+            </div>
+            <p class="text-[var(--secondary)] font-semibold text-xl mb-2 italic">Passeio Completo / Social</p>
+            <div class="text-gray-600 space-y-4 leading-relaxed">
+                <p><strong>Mulheres:</strong> Vestidos fluidos, comprimentos midi ou longo. Cores claras e tons pastéis são muito bem-vindos!</p>
+                <p><strong>Homens:</strong> Terno ou costume (calça social, camisa e paletó). O uso de gravata é opcional.</p>
+            </div>
+            <div class="mt-6 flex justify-center gap-4 opacity-50">
+                <i data-feather="user" class="w-6 h-6"></i>
+                <i data-feather="heart" class="w-6 h-6 text-[var(--primary)]"></i>
+                <i data-feather="user" class="w-6 h-6"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <section id="rsvp" class="mb-24">
+            <div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-bold">Confirme sua Presença</h2><div class="w-24 h-1 bg-[var(--accent)] mx-auto mt-4"></div><p class="max-w-2xl mx-auto mt-4 text-lg text-gray-600">Sua confirmação é muito importante para nós. Por favor, responda até o dia 25 de Setembro de 2026.</p></div>
+            <div class="bg-white p-2 sm:p-6 rounded-lg shadow-xl max-w-4xl mx-auto">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfh4mZ_9XM9s1o4oSkPrDZEp5FV5-0ab7u7GnxhTMmSkWe_qg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[var(--dark)] text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <p class="mb-4 text-gray-300">© 2026 <strong>Professor </strong>Welington Hopka.<br>All rights reserved .</p>
+                    <div class="flex justify-center md:justify-start space-x-6 text-sm text-gray-400">
+                        <a href="#" class="hover:text-[var(--primary)] transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-[var(--primary)] transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-5 mb-4">
+                        <a href="https://www.facebook.com/profile.php?id=100077098840627" target="_blank" rel="noopener" class="text-gray-400 hover:text-[var(--primary)] transition-colors" aria-label="Facebook"><i data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/welington_hopka/" target="_blank" rel="noopener" class="text-gray-400 hover:text-[var(--primary)] transition-colors" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                        <a href="https://github.com/Whellingthon" target="_blank" rel="noopener" class="text-gray-400 hover:text-[var(--primary)] transition-colors" aria-label="GitHub"><i data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/welington-hopka/" target="_blank" rel="noopener" class="text-gray-400 hover:text-[var(--primary)] transition-colors" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.youtube.com/@welingtonhopka" target="_blank" rel="noopener" class="text-gray-400 hover:text-[var(--primary)] transition-colors" aria-label="YouTube"><i data-feather="youtube"></i></a>
+                        <a href="https://wa.me/5514997669155" target="_blank" rel="noopener" class="text-gray-400 hover:text-[var(--primary)] transition-colors" aria-label="WhatsApp"><i data-feather="phone"></i></a>
+                    </div>
+                    <p class="text-sm text-gray-500 italic">Passionate about education and technology.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="pixModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full text-center relative transform transition-all duration-300 scale-95">
+            <button id="closePixModal" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800"><i data-feather="x" class="w-6 h-6"></i></button>
+            <h3 class="text-2xl font-semibold mb-4 text-[var(--secondary)]">Agradecemos o seu carinho!</h3>
+            <p class="text-gray-600 mb-6">Para nos presentear, utilize a chave PIX abaixo.</p>
+            <div class="bg-gray-100 p-4 rounded-lg mb-6"><p class="font-medium text-sm text-gray-500 mb-2">Chave PIX (E-mail)</p><div class="flex items-center justify-center gap-4"><p id="pixKey" class="text-lg font-mono text-[var(--dark)]"></p><button id="copyPixBtn" aria-label="Copiar Chave PIX" class="p-2 bg-gray-200 rounded-md hover:bg-gray-300 transition"><i data-feather="copy" class="w-5 h-5 text-[var(--secondary)]"></i></button></div></div>
+            <div><p class="mb-4 text-gray-600">Ou aponte a câmera para o QR Code:</p><img id="qrCodeImg" alt="QR Code PIX" class="mx-auto border-4 border-white shadow-md rounded-lg"></div>
+        </div>
+    </div>
+    <!-- Mini Player de Créditos -->
+<div id="music-player-info" class="fixed bottom-6 left-6 z-50 flex items-center bg-white/10 backdrop-blur-md border border-white/20 p-2 rounded-full shadow-lg transition-all duration-500 opacity-0 invisible translate-y-4 md:translate-y-0">
+    <div class="bg-[var(--primary)] p-2 rounded-full animate-spin-slow">
+        <i data-feather="music" class="w-4 h-4 text-white"></i>
+    </div>
+    <div class="px-3 pr-5">
+        <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Agora tocando</p>
+        <p class="text-xs font-semibold text-[var(--dark)]">Perfect - Ed Sheeran</p>
+    </div>
+</div>
+<!-- Botão Voltar ao Topo -->
+<button id="backToTopBtn" aria-label="Voltar ao topo" 
+        class="fixed bottom-6 right-6 bg-[var(--secondary)] text-white p-4 rounded-full shadow-2xl transition-all duration-300 z-50 opacity-0 invisible hover:scale-110 active:scale-95 sm:p-3">
+    <i data-feather="arrow-up" class="w-6 h-6 md:w-5 md:h-5"></i>
+</button>
+
+<!-- Áudio -->
+<audio id="siteMusic" loop>
+    <source src="music/Ed Sheeran - Perfect (Official Music Video) - Ed Sheeran (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/noivas.js"></script>
+</body>
+</html>
+faça as alterações para mim

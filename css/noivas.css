@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+.bad-script-regular {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --primary: #91a8d0;
+    --secondary: #7a5c58;
+    --accent: #91a8d0;
+    --light: #f8f1f0;
+    --dark: #3a2e2c;
+}
+/* "Enganando" o navegador para criar um negrito artificial */
+.casar-bold {
+    font-family: "Bad Script", cursive;
+    /* Criamos uma sombra curtinha da mesma cor do texto para ele parecer mais grosso */
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+    /* Opcional: Aumentar levemente o tamanho para dar mais peso */
+    font-size: 1.1em; 
+}
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(230, 184, 195, 0.9), rgba(212, 165, 154, 0.9));
+}
+
+.gift-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.countdown-number {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.countdown-label {
+    font-family: 'Montserrat', sans-serif;
+}
+.carousel-item img {
+    /* 1. Faz a imagem preencher a largura */
+    width: 100%; 
+    /* 2. Define uma altura fixa para o carrossel (ajuste conforme seu layout) */
+    height: 500px; /* OU use vh: height: 60vh; (60% da altura da tela) */
+    /* 3. A MÁGICA: object-fit */
+    object-fit: cover; /* Mantém a proporção, corta o excesso (padrão que está dando erro) */
+    /* OU */
+    /* object-fit: contain; /* Mostra a imagem inteira, mas deixa barras laterais (fica feio) */
+    
+    /* 4. SE USAR 'COVER', AJUSTE A POSIÇÃO: */
+    object-position: top center; /* Tenta focar no topo da imagem se o corte for inferior. */
+    /* OU use porcentagem: */
+    /* object-position: 50% 20%; /* 50% horizontal, 20% vertical (foca mais acima) */
+}
+
+.carousel-item {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+/* Garante que as imagens do carrossel fiquem invisíveis por padrão */
+.carousel-bg-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Transição suave de 1.5 segundos */
+    background-size: cover;
+    /* Prioriza o topo, mas mantém o centro horizontal */
+    background-position: center 15%; 
+    /* Evita que a imagem "estoure" demais em telas muito largas */
+    background-repeat: no-repeat;
+}
+
+/* Classe que o JavaScript adicionará para mostrar a imagem atual */
+.carousel-bg-item.active {
+    opacity: 0.4; /* Ajuste aqui a transparência (0.1 a 1.0) */
+}
+
+/* Ajuste a altura do header se necessário para cobrir bem as fotos */
+header {
+    position: relative;
+    background-color: var(--secondary); /* Cor de fundo caso a imagem demore a carregar */
+}
+/* Configuração para Animação de Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação lenta para o ícone do player */
+.animate-spin-slow {
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/* O contêiner principal precisa ser relative para "segurar" as flores absolutas dentro dele */
+.secao-conteudo-central {
+    position: relative;
+    overflow: hidden; /* Importante: evita que as imagens criem barra de rolagem se vazarem da tela */
+    padding: 80px 20px; /* Dá espaço para o conteúdo não ficar coberto pelas flores */
+    background-color: #f9f9fa; /* Cor de fundo da seção (opcional) */
+    min-height: 600px; /* Apenas para garantir que a seção tenha altura */
+}
+
+/* Estilo base compartilhado pelas duas flores */
+.flor-decorativa {
+    position: absolute;
+    z-index: 1; /* Coloca as flores no fundo. Se quiser que fiquem por cima de algo, aumente o valor */
+    max-width: 300px; /* Tamanho das flores. Ajuste conforme necessário */
+    pointer-events: none; /* Garante que as imagens não atrapalhem o clique do usuário em links ou botões */
+}
+
+/* Posicionamento específico: Superior Esquerda */
+.flor-top-left {
+    top: 0;
+    left: 0;
+}
+
+/* Posicionamento específico: Inferior Direita */
+.flor-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Responsividade: Diminui as flores em telas de celular */
+@media (max-width: 768px) {
+    .flor-decorativa {
+        max-width: 150px; 
+    }
+    
+    .secao-conteudo-central {
+        padding: 40px 15px;
+    }
+}
