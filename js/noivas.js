@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyPixBtn = document.getElementById('copyPixBtn');
     const pixKeyElement = document.getElementById('pixKey');
     const qrCodeImg = document.getElementById('qrCodeImg');
+    const pixCopiaECola = "00020101021126580014BR.GOV.BCB.PIX0118452077450001645204000053039865802BR5921ADRIELI FONTANA ARAUJO6007MARILIA62070503***63048892";
     
     function updatePixInfo() {
         if (pixKeyElement) pixKeyElement.textContent = pixKeyValue;
